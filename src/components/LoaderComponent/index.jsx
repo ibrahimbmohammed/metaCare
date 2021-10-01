@@ -1,11 +1,9 @@
 import React from 'react';
-import './index.scss';
-
-const Loader = ({ className = 'black', page, withText }) => {
+import loader from '../../assets/img/loader.gif'
+const Loader = () => {
     return (
-        <div className={page ? 'page' : ''}>
-            <div className={"lds-ring " + className || ''}><div></div><div></div><div></div><div></div></div>
-            {withText && <p className="text-large text-center">{withText}</p>}
+        <div className="flex justify-center mt-20">
+             <img src={loader} className="img__logo mt-20" alt="logo" />
         </div>
     )
 }

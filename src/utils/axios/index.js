@@ -15,5 +15,6 @@ import axios from "axios";
   
   
   const getRequest = (url) => axios.get(`${baseURL}${url}`, setHeader());
+  const getRequestNoBase = (url) => axios.get(`${url}`, setHeader());
 
-export { getRequest};
+export { getRequest, getRequestNoBase};
